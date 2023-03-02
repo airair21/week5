@@ -6,26 +6,41 @@ body {
   font-size: 22px;
   line-height: 1.5;
   font-family: Helvetica, sans-serif;
-  color: #111;
+  background-color: rgb(255, 191, 15);
   margin: 0;
   padding: 20px 40px;
 
   /* This will center anything on your page */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .clock {
-  display: flex;
+  display: block;
   gap: 20px;
   padding: 20px 30px;
   text-align: center;
-  border: 2px solid black;
+  border: 31px ridge rgb(94, 28, 4);
   border-radius: 10px;
+
+  font-family: 'Climate Crisis', cursive;
+  font-size: 125px;
 }
 
 .time {
-  
+  color: rgb(237, 122, 0);
+}
+
+.icon {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-items: center;
+
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 45%;
 }

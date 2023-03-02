@@ -12,9 +12,10 @@ function currentTime() {
         session = "PM";
     }
    
-     hh = (hh < 10) ? "0" + hh : hh - "12";
+     hh = (hh < 10) ? "0" + hh : hh;
      mm = (mm < 10) ? "0" + mm : mm;
      ss = (ss < 10) ? "0" + ss : ss;
+     hh = (hh > 13) ? hh - 12 : hh;
       
     //let time = hh + ":" + mm + ":" + ss + " " + session;
   

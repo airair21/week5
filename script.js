@@ -10,12 +10,14 @@ function currentTime() {
 
     if(hh > 12) {
         session = "PM";
-        document.getElementById("night").style.display = "initial";
-        document.getElementById("day").style.display = "none";
     }
-    if(hh < 12) {
+    if(7 < hh < 19) {
         document.getElementById("day").style.display = "initial";
         document.getElementById("night").style.display = "none";
+    }
+    if(19 < hh > 7) {
+        document.getElementById("night").style.display = "initial";
+        document.getElementById("day").style.display = "none";
     }
    
      hh = (hh < 10) ? "0" + hh : hh;
